@@ -675,4 +675,25 @@ Text GLabel 2750 3650 0    50   Input ~ 0
 UART0_RX
 Text GLabel 2750 3450 0    50   BiDi ~ 0
 SELECT
+$Comp
+L Connector_Generic:Conn_01x05 J3
+U 1 1 6857FA47
+P 2900 6000
+F 0 "J3" V 2864 5712 50  0000 R CNN
+F 1 "Conn_01x05" V 2773 5712 50  0000 R CNN
+F 2 "SDBox:UART_PinHeader_SMD_pads_2.54mm_pitch" H 2900 6000 50  0001 C CNN
+F 3 "~" H 2900 6000 50  0001 C CNN
+	1    2900 6000
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2800 6200 3    50   Output ~ 0
+UART0_TX
+Text GLabel 3100 6200 3    50   Input ~ 0
+VCC
+Text GLabel 2900 6200 3    50   Input ~ 0
+GND
+Text GLabel 2700 6200 3    50   Input ~ 0
+3V3
+Text GLabel 3000 6200 3    50   Input ~ 0
+UART0_RX
 $EndSCHEMATC
