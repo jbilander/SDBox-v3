@@ -245,25 +245,12 @@ Text GLabel 8650 2700 0    50   Input ~ 0
 VCC
 Text GLabel 2750 3750 0    50   Input ~ 0
 GND
-Text GLabel 2400 4650 3    50   Input ~ 0
+Text GLabel 2350 4650 3    50   Input ~ 0
 GND
 Text GLabel 3750 4650 2    50   Input ~ 0
 GND
 Text GLabel 3750 3750 2    50   Input ~ 0
 GND
-Text GLabel 2400 4450 1    50   Input ~ 0
-3V3
-$Comp
-L SDBox:SN74CB3T16210 U2
-U 1 1 6442C4B2
-P 3250 4150
-F 0 "U2" H 3250 5517 50  0000 C CNN
-F 1 "SN74CB3T16210" H 3250 5426 50  0000 C CNN
-F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 4900 4600 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74cb3t16210.pdf" H 4900 4600 50  0001 C CNN
-	1    3250 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR0101
 U 1 1 644304C8
@@ -297,8 +284,6 @@ Text GLabel 3750 4550 2    50   BiDi ~ 0
 D6_3V3
 Text GLabel 3750 4450 2    50   BiDi ~ 0
 D7_3V3
-Text GLabel 2750 4250 0    50   Input ~ 0
-GND
 NoConn ~ 3750 4350
 Text GLabel 1550 5400 0    50   Output ~ 0
 STROBE
@@ -315,18 +300,14 @@ RESET_3V3
 $Comp
 L Device:C_Small C3
 U 1 1 6448FFBE
-P 2400 4550
-F 0 "C3" H 2200 4650 50  0000 C CNN
-F 1 "0.1uF" H 2200 4550 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2400 4550 50  0001 C CNN
-F 3 "~" H 2400 4550 50  0001 C CNN
-	1    2400 4550
+P 2350 4550
+F 0 "C3" H 2500 4600 50  0000 C CNN
+F 1 "0.1uF" H 2500 4500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 2350 4550 50  0001 C CNN
+F 3 "~" H 2350 4550 50  0001 C CNN
+	1    2350 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 4450 2750 4450
-Wire Wire Line
-	2400 4650 2750 4650
 Wire Wire Line
 	3750 3150 3750 3050
 Text GLabel 4800 4300 0    50   Output ~ 0
@@ -469,7 +450,7 @@ U 1 1 647840C8
 P 5950 6050
 F 0 "R3" H 6000 6050 50  0000 L CNN
 F 1 "10k" H 5750 6050 50  0001 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5950 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5950 6050 50  0001 C CNN
 F 3 "~" H 5950 6050 50  0001 C CNN
 	1    5950 6050
 	1    0    0    -1  
@@ -611,4 +592,78 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4500 6050 50  0001 C CNN
 	1    4500 6050
 	1    0    0    -1  
 $EndComp
+$Comp
+L SDBox:SN74CBT16210 U2
+U 1 1 6850D73F
+P 3250 4150
+F 0 "U2" H 3250 5517 50  0000 C CNN
+F 1 "SN74CBT16210" H 3250 5426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" H 4900 4600 50  0001 C CNN
+F 3 "" H 4900 4600 50  0001 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3650 2750 3750
+Wire Wire Line
+	2750 3750 2750 3850
+Connection ~ 2750 3750
+Connection ~ 2750 3850
+Wire Wire Line
+	2750 3850 2750 3950
+Connection ~ 2750 3950
+Wire Wire Line
+	2750 3950 2750 4050
+Connection ~ 2750 4050
+Wire Wire Line
+	2750 4050 2750 4150
+Connection ~ 2750 4150
+Wire Wire Line
+	2750 4150 2750 4250
+NoConn ~ 3750 4250
+NoConn ~ 3750 4150
+NoConn ~ 3750 4050
+NoConn ~ 3750 3950
+NoConn ~ 3750 3850
+$Comp
+L Device:D_Small D3
+U 1 1 6852D7AF
+P 2200 4250
+F 0 "D3" V 2200 4180 50  0000 R CNN
+F 1 "D_Small" V 2155 4180 50  0001 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2200 4250 50  0001 C CNN
+F 3 "~" V 2200 4250 50  0001 C CNN
+	1    2200 4250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2200 4050 1    50   Input ~ 0
+VCC
+Wire Wire Line
+	2350 4650 2750 4650
+Wire Wire Line
+	2350 4450 2750 4450
+$Comp
+L Device:R_Small R4
+U 1 1 685336A8
+P 2200 4550
+F 0 "R4" H 2050 4550 50  0000 L CNN
+F 1 "2.9k" H 2000 4550 50  0001 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2200 4550 50  0001 C CNN
+F 3 "~" H 2200 4550 50  0001 C CNN
+	1    2200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4050 2200 4150
+Wire Wire Line
+	2200 4350 2200 4450
+Wire Wire Line
+	2200 4450 2350 4450
+Connection ~ 2200 4450
+Connection ~ 2350 4450
+Wire Wire Line
+	2350 4650 2200 4650
+Connection ~ 2350 4650
+Text Label 2400 4450 0    50   ~ 0
+4V3
 $EndSCHEMATC
