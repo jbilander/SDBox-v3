@@ -445,23 +445,23 @@ Wire Wire Line
 	5650 5850 5750 5850
 Wire Wire Line
 	5550 5850 5650 5850
-Text GLabel 4400 6250 3    50   BiDi ~ 0
+Text GLabel 4800 6250 3    50   BiDi ~ 0
 D0
-Text GLabel 4300 6250 3    50   BiDi ~ 0
+Text GLabel 4700 6250 3    50   BiDi ~ 0
 D1
-Text GLabel 4200 6250 3    50   BiDi ~ 0
+Text GLabel 4600 6250 3    50   BiDi ~ 0
 D2
-Text GLabel 4100 6250 3    50   BiDi ~ 0
+Text GLabel 4500 6250 3    50   BiDi ~ 0
 D3
 Text GLabel 5950 6250 3    50   Input ~ 0
 STROBE
-Text GLabel 4950 6250 3    50   BiDi ~ 0
+Text GLabel 4200 6250 3    50   BiDi ~ 0
 D6
-Text GLabel 4850 6250 3    50   BiDi ~ 0
+Text GLabel 4100 6250 3    50   BiDi ~ 0
 D7
-Text GLabel 5150 6250 3    50   BiDi ~ 0
+Text GLabel 4400 6250 3    50   BiDi ~ 0
 D4
-Text GLabel 5050 6250 3    50   BiDi ~ 0
+Text GLabel 4300 6250 3    50   BiDi ~ 0
 D5
 $Comp
 L Device:R_Small R3
@@ -600,4 +600,15 @@ Text GLabel 6950 3600 1    50   Input ~ 0
 NC2
 Wire Wire Line
 	4100 5850 5450 5850
+$Comp
+L Device:R_Network08 RN3
+U 1 1 684FD3D5
+P 4500 6050
+F 0 "RN3" H 4888 6096 50  0000 L CNN
+F 1 "10k" H 4888 6005 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 4975 6050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4500 6050 50  0001 C CNN
+	1    4500 6050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
