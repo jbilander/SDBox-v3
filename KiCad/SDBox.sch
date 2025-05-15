@@ -106,8 +106,6 @@ Text GLabel 7050 3600 1    50   Output ~ 0
 MISO
 Text GLabel 7450 3600 1    50   Input ~ 0
 MOSI
-Text GLabel 2750 3450 0    50   BiDi ~ 0
-SELECT
 Text GLabel 7250 3600 1    50   Input ~ 0
 SCK
 NoConn ~ 1550 3300
@@ -262,8 +260,6 @@ F 3 "" H 1600 2400 50  0001 C CNN
 	1    1600 2400
 	1    0    0    -1  
 $EndComp
-Text GLabel 3750 3550 2    50   BiDi ~ 0
-SELECT_3V3
 Text GLabel 3750 3350 2    50   BiDi ~ 0
 BUSY_3V3
 Text GLabel 3750 3450 2    50   BiDi ~ 0
@@ -293,9 +289,9 @@ Text GLabel 3750 5350 2    50   Output ~ 0
 STROBE_3V3
 Text GLabel 3750 3250 2    50   Input ~ 0
 ACK_3V3
-Text GLabel 2750 3550 0    50   Input ~ 0
+Text GLabel 2750 3850 0    50   Input ~ 0
 RESET
-Text GLabel 3750 3650 2    50   Output ~ 0
+Text GLabel 3750 3950 2    50   Output ~ 0
 RESET_3V3
 $Comp
 L Device:C_Small C3
@@ -604,15 +600,6 @@ F 3 "" H 4900 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 3650 2750 3750
-Wire Wire Line
-	2750 3750 2750 3850
-Connection ~ 2750 3750
-Connection ~ 2750 3850
-Wire Wire Line
-	2750 3850 2750 3950
-Connection ~ 2750 3950
-Wire Wire Line
 	2750 3950 2750 4050
 Connection ~ 2750 4050
 Wire Wire Line
@@ -623,8 +610,6 @@ Wire Wire Line
 NoConn ~ 3750 4250
 NoConn ~ 3750 4150
 NoConn ~ 3750 4050
-NoConn ~ 3750 3950
-NoConn ~ 3750 3850
 $Comp
 L Device:D_Small D3
 U 1 1 6852D7AF
@@ -666,4 +651,28 @@ Wire Wire Line
 Connection ~ 2350 4650
 Text Label 2400 4450 0    50   ~ 0
 4V3
+NoConn ~ 4800 5200
+NoConn ~ 5800 4600
+NoConn ~ 5800 4400
+NoConn ~ 5800 4200
+NoConn ~ 5800 4100
+NoConn ~ 5800 3800
+Text GLabel 4800 4800 0    50   Output ~ 0
+UART0_TX_3V3
+Text GLabel 4800 4900 0    50   Input ~ 0
+UART0_RX_3V3
+Text GLabel 2750 3950 0    50   Input ~ 0
+GND
+Text GLabel 3750 3650 2    50   Input ~ 0
+UART0_TX_3V3
+Text GLabel 2750 3550 0    50   Output ~ 0
+UART0_TX
+Text GLabel 3750 3550 2    50   BiDi ~ 0
+SELECT_3V3
+Text GLabel 3750 3850 2    50   Output ~ 0
+UART0_RX_3V3
+Text GLabel 2750 3650 0    50   Input ~ 0
+UART0_RX
+Text GLabel 2750 3450 0    50   BiDi ~ 0
+SELECT
 $EndSCHEMATC
