@@ -13,31 +13,31 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 1550 5200 0    50   BiDi ~ 0
+Text GLabel 1300 5200 0    50   BiDi ~ 0
 D0
-Text GLabel 1550 5000 0    50   BiDi ~ 0
+Text GLabel 1300 5000 0    50   BiDi ~ 0
 D1
-Text GLabel 1550 4800 0    50   BiDi ~ 0
+Text GLabel 1300 4800 0    50   BiDi ~ 0
 D2
-Text GLabel 1550 4600 0    50   BiDi ~ 0
+Text GLabel 1300 4600 0    50   BiDi ~ 0
 D3
-Text GLabel 1550 4400 0    50   BiDi ~ 0
+Text GLabel 1300 4400 0    50   BiDi ~ 0
 D4
-Text GLabel 1550 4200 0    50   BiDi ~ 0
+Text GLabel 1300 4200 0    50   BiDi ~ 0
 D5
-Text GLabel 1550 4000 0    50   BiDi ~ 0
+Text GLabel 1300 4000 0    50   BiDi ~ 0
 D6
-Text GLabel 1550 3800 0    50   BiDi ~ 0
+Text GLabel 1300 3800 0    50   BiDi ~ 0
 D7
-Text GLabel 1550 3400 0    50   BiDi ~ 0
+Text GLabel 1300 3400 0    50   BiDi ~ 0
 BUSY
-Text GLabel 1550 3200 0    50   BiDi ~ 0
+Text GLabel 1300 3200 0    50   BiDi ~ 0
 POUT
-Text GLabel 1550 3000 0    50   BiDi ~ 0
+Text GLabel 1300 3000 0    50   BiDi ~ 0
 SELECT
-Text GLabel 1250 4200 0    50   Input ~ 0
+Text GLabel 1000 4200 0    50   Input ~ 0
 GND
-Text GLabel 1550 4900 0    50   Output ~ 0
+Text GLabel 1300 4900 0    50   Output ~ 0
 RESET
 Text GLabel 5800 5000 2    50   Input ~ 0
 GND
@@ -108,9 +108,9 @@ Text GLabel 7450 3600 1    50   Input ~ 0
 MOSI
 Text GLabel 7250 3600 1    50   Input ~ 0
 SCK
-NoConn ~ 1550 3300
-NoConn ~ 1550 3500
-NoConn ~ 1550 5100
+NoConn ~ 1300 3300
+NoConn ~ 1300 3500
+NoConn ~ 1300 5100
 Text GLabel 5800 4900 2    50   Output ~ 0
 SCK
 Text GLabel 5800 5200 2    50   Input ~ 0
@@ -119,7 +119,7 @@ Text GLabel 5800 4800 2    50   Output ~ 0
 MOSI
 Text GLabel 1600 2450 0    50   Input ~ 0
 3V3
-NoConn ~ 1550 3100
+NoConn ~ 1300 3100
 $Comp
 L Device:LED D1
 U 1 1 5EBAFFCE
@@ -135,14 +135,14 @@ Text GLabel 8850 3400 3    50   Input ~ 0
 GND
 Wire Wire Line
 	8650 2700 8850 2700
-Text GLabel 1550 3600 0    50   Input ~ 0
+Text GLabel 1300 3600 0    50   Input ~ 0
 ACK
 $Comp
 L Device:R_Small R1
 U 1 1 5EB9BBF1
 P 8850 2900
 F 0 "R1" H 8700 2900 50  0000 L CNN
-F 1 "220" H 8900 2900 50  0000 L CNN
+F 1 "330" H 8900 2900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8850 2900 50  0001 C CNN
 F 3 "~" H 8850 2900 50  0001 C CNN
 	1    8850 2900
@@ -161,42 +161,42 @@ Wire Notes Line
 Text Notes 9000 2700 0    50   ~ 0
 Optional Power LED
 Wire Wire Line
-	1550 3700 1250 3700
+	1300 3700 1000 3700
 Wire Wire Line
-	1250 3700 1250 3900
+	1000 3700 1000 3900
 Wire Wire Line
-	1250 4700 1550 4700
+	1000 4700 1300 4700
 Wire Wire Line
-	1550 3900 1250 3900
-Connection ~ 1250 3900
+	1300 3900 1000 3900
+Connection ~ 1000 3900
 Wire Wire Line
-	1250 3900 1250 4100
+	1000 3900 1000 4100
 Wire Wire Line
-	1550 4100 1250 4100
-Connection ~ 1250 4100
+	1300 4100 1000 4100
+Connection ~ 1000 4100
 Wire Wire Line
-	1250 4100 1250 4300
+	1000 4100 1000 4300
 Wire Wire Line
-	1550 4300 1250 4300
-Connection ~ 1250 4300
+	1300 4300 1000 4300
+Connection ~ 1000 4300
 Wire Wire Line
-	1250 4300 1250 4500
+	1000 4300 1000 4500
 Wire Wire Line
-	1550 4500 1250 4500
-Connection ~ 1250 4500
+	1300 4500 1000 4500
+Connection ~ 1000 4500
 Wire Wire Line
-	1250 4500 1250 4700
+	1000 4500 1000 4700
 Text GLabel 2750 3150 0    50   Output ~ 0
 ACK
 $Comp
 L Connector:DB25_Male J1
 U 1 1 6108B66B
-P 1850 4200
-F 0 "J1" H 2030 4246 50  0000 L CNN
-F 1 "DB25_Male" H 1650 2750 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 1850 4200 50  0001 C CNN
-F 3 " ~" H 1850 4200 50  0001 C CNN
-	1    1850 4200
+P 1600 4200
+F 0 "J1" H 1780 4246 50  0000 L CNN
+F 1 "DB25_Male" H 1400 2750 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-25_Male_EdgeMount_P2.77mm" H 1600 4200 50  0001 C CNN
+F 3 " ~" H 1600 4200 50  0001 C CNN
+	1    1600 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -281,7 +281,7 @@ D6_3V3
 Text GLabel 3750 4450 2    50   BiDi ~ 0
 D7_3V3
 NoConn ~ 3750 4350
-Text GLabel 1550 5400 0    50   Output ~ 0
+Text GLabel 1300 5400 0    50   Output ~ 0
 STROBE
 Text GLabel 2750 5350 0    50   Input ~ 0
 STROBE
@@ -344,8 +344,8 @@ $Comp
 L Device:LED D2
 U 1 1 5EBA7223
 P 9100 4850
-F 0 "D2" V 9100 5000 50  0000 R CNN
-F 1 "Activity LED indicator" V 9350 5150 50  0000 R CNN
+F 0 "D2" V 9100 5050 50  0000 R CNN
+F 1 "Activity LED indicator" V 9250 5150 50  0000 R CNN
 F 2 "LED_THT:LED_Rectangular_W5.0mm_H2.0mm" H 9100 4850 50  0001 C CNN
 F 3 "~" H 9100 4850 50  0001 C CNN
 	1    9100 4850
@@ -356,7 +356,7 @@ L Device:R_Small R2
 U 1 1 5EB9CA00
 P 9100 4300
 F 0 "R2" H 9000 4300 50  0000 C CNN
-F 1 "220" H 9250 4300 50  0000 C CNN
+F 1 "330" H 9250 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9100 4300 50  0001 C CNN
 F 3 "~" H 9100 4300 50  0001 C CNN
 	1    9100 4300
@@ -445,7 +445,7 @@ L Device:R_Small R3
 U 1 1 647840C8
 P 5950 6050
 F 0 "R3" H 6000 6050 50  0000 L CNN
-F 1 "10k" H 5750 6050 50  0001 L CNN
+F 1 "10k" H 6000 6200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 5950 6050 50  0001 C CNN
 F 3 "~" H 5950 6050 50  0001 C CNN
 	1    5950 6050
@@ -558,7 +558,7 @@ Text GLabel 7100 2450 3    50   Input ~ 0
 CS
 Text GLabel 7400 2450 3    50   Input ~ 0
 CP
-NoConn ~ 1550 5300
+NoConn ~ 1300 5300
 Text GLabel 4650 5850 1    50   Input ~ 0
 VCC
 Wire Wire Line
@@ -615,7 +615,7 @@ L Device:D_Small D3
 U 1 1 6852D7AF
 P 2200 4250
 F 0 "D3" V 2200 4180 50  0000 R CNN
-F 1 "D_Small" V 2155 4180 50  0001 R CNN
+F 1 "MMDL6050T1G" V 2300 4500 50  0000 R CNN
 F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2200 4250 50  0001 C CNN
 F 3 "~" V 2200 4250 50  0001 C CNN
 	1    2200 4250
@@ -632,7 +632,7 @@ L Device:R_Small R4
 U 1 1 685336A8
 P 2200 4550
 F 0 "R4" H 2050 4550 50  0000 L CNN
-F 1 "2.9k" H 2000 4550 50  0001 L CNN
+F 1 "2.9k" H 2050 4400 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 2200 4550 50  0001 C CNN
 F 3 "~" H 2200 4550 50  0001 C CNN
 	1    2200 4550
