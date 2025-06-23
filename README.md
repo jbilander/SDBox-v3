@@ -3,6 +3,16 @@ A parallel to Pico 2 W and sd-card project for the Amiga
 
 ***
 
+<a href="images/SDBox-v3_pic5.png">
+<img src="images/SDBox-v3_pic5.png" width="390" height="338">
+</a>
+<a href="images/SDBox-v3_pic6.png">
+<img src="images/SDBox-v3_pic6.png" width="381" height="338">
+</a>
+
+
+***
+
 <a href="images/SDBox-v3_pic1.jpg">
 <img src="images/SDBox-v3_pic1.jpg" width="776" height="582">
 </a>
