@@ -1,6 +1,23 @@
 # SDBox-v3
 A parallel to Pico 2 W and sd-card project for the Amiga
 
+***
+
+<a href="images/SDBox-v3_pic1.jpg">
+<img src="images/SDBox-v3_pic1.jpg" width="776" height="582">
+</a>
+
+***
+
+<a href="images/SDBox-v3_pic2.jpg">
+<img src="images/SDBox-v3_pic2.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-v3_pic3.jpg">
+<img src="images/SDBox-v3_pic3.jpg" width="256" height="192">
+</a>
+<a href="images/SDBox-v3_pic4.jpg">
+<img src="images/SDBox-v3_pic4.jpg" width="256" height="192">
+</a>
 
 ***
 
