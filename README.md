@@ -27,6 +27,7 @@ C1 | Capacitor 10uF | 1206 |
 C2 | Capacitor 0.1uF = 100nF | 0805 | 
 C3 | Capacitor 0.1uF = 100nF | 0603 |
 Housing | 2 x Plastic Shell Cover | For DB25 plug | [Aliexpress](https://www.aliexpress.com/item/1005004717091904.html)
+2 x PinHeader | PinHeader Board Weight/Level Support | 3-pin 2.54 mm pitch single row | Move the plastic guard to leave ~7.5 mm of pin before soldering in order to hold board in perfect level
 
 ***
 
@@ -36,7 +37,7 @@ Specify Layer Sequence: Yes
 
     L1(Top layer):    F_Cu.gbr
     L2(Inner layer1): GND_Cu.gbr
-    L3(Inner layer2): 4V3_Cu.gbr
+    L3(Inner layer2): VCC_Cu.gbr
     L4(Bottom layer): B_Cu.gbr
 
 Remove Order Number: 
