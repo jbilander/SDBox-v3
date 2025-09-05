@@ -3,6 +3,11 @@ A parallel to Pico 2 W and sd-card project for the Amiga
 
 ***
 
+Firmware for this project with support for a blinking activity LED can be built from source here:<br />
+https://github.com/jbilander/amiga-par-to-spi-adapter/tree/master/rp2350
+
+***
+
 <a href="images/SDBox-v3_pic5.png">
 <img src="images/SDBox-v3_pic5.png" width="390" height="338">
 </a>
