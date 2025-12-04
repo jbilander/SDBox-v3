@@ -36,7 +36,7 @@ https://github.com/jbilander/amiga-par-to-spi-adapter/tree/master/rp2350
 
 ***
 
-BOM Rev. 3A
+BOM Rev. 3B
 ---------
 Reference  | Name/Value   | Package | Notes
 -|-|-|-|
