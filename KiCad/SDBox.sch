@@ -126,7 +126,7 @@ U 1 1 5EBAFFCE
 P 8850 3150
 F 0 "D1" V 8889 3033 50  0000 R CNN
 F 1 "Power LED indicator" V 8798 3033 50  0000 R CNN
-F 2 "LED_THT:LED_Rectangular_W5.0mm_H2.0mm" H 8850 3150 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8850 3150 50  0001 C CNN
 F 3 "~" H 8850 3150 50  0001 C CNN
 	1    8850 3150
 	0    -1   -1   0   
@@ -142,7 +142,7 @@ L Device:R_Small R1
 U 1 1 5EB9BBF1
 P 8850 2900
 F 0 "R1" H 8700 2900 50  0000 L CNN
-F 1 "4.7k" H 8900 2900 50  0000 L CNN
+F 1 "1k" H 8900 2900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8850 2900 50  0001 C CNN
 F 3 "~" H 8850 2900 50  0001 C CNN
 	1    8850 2900
@@ -330,7 +330,7 @@ Text GLabel 4800 4200 0    50   BiDi ~ 0
 D7_3V3
 Text GLabel 4800 5100 0    50   Input ~ 0
 STROBE_3V3
-Text GLabel 6300 3650 1    50   Input ~ 0
+Text GLabel 5800 4300 2    50   Input ~ 0
 RESET_3V3
 Text GLabel 3750 3050 2    50   Input ~ 0
 GND
@@ -346,7 +346,7 @@ U 1 1 5EBA7223
 P 9100 4850
 F 0 "D2" V 9100 5050 50  0000 R CNN
 F 1 "Activity LED indicator" V 9250 5150 50  0000 R CNN
-F 2 "LED_THT:LED_Rectangular_W5.0mm_H2.0mm" H 9100 4850 50  0001 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9100 4850 50  0001 C CNN
 F 3 "~" H 9100 4850 50  0001 C CNN
 	1    9100 4850
 	0    -1   -1   0   
@@ -356,7 +356,7 @@ L Device:R_Small R2
 U 1 1 5EB9CA00
 P 9100 4300
 F 0 "R2" H 9000 4300 50  0000 C CNN
-F 1 "220" H 9250 4300 50  0000 C CNN
+F 1 "1k" H 9250 4300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9100 4300 50  0001 C CNN
 F 3 "~" H 9100 4300 50  0001 C CNN
 	1    9100 4300
@@ -380,17 +380,6 @@ Wire Wire Line
 	9100 4400 9100 4700
 Text GLabel 5800 3900 2    50   Output ~ 0
 ACT_LED
-$Comp
-L Jumper:Jumper_2_Open JP1
-U 1 1 6466A6DB
-P 6300 3850
-F 0 "JP1" V 6346 3762 50  0000 R CNN
-F 1 "Jumper_2_Open" H 6250 3700 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6300 3850 50  0001 C CNN
-F 3 "~" H 6300 3850 50  0001 C CNN
-	1    6300 3850
-	0    -1   -1   0   
-$EndComp
 Wire Notes Line
 	8400 3750 8400 5950
 Wire Notes Line
@@ -561,12 +550,6 @@ CP
 NoConn ~ 1300 5300
 Text GLabel 4650 5850 1    50   Input ~ 0
 VCC
-Wire Wire Line
-	5800 4300 6300 4300
-Wire Wire Line
-	6300 4300 6300 4050
-Text Label 6050 4300 0    50   ~ 0
-RUN
 Text GLabel 7650 3600 1    50   Input ~ 0
 NC1
 Text GLabel 7200 2450 3    50   Input ~ 0
@@ -695,5 +678,20 @@ GND
 Text GLabel 2700 6200 3    50   Input ~ 0
 3V3
 Text GLabel 3000 6200 3    50   Input ~ 0
+UART0_RX
+$Comp
+L Switch:SW_Push BT1
+U 1 1 6965AEA0
+P 7400 6100
+F 0 "BT1" H 7400 6385 50  0000 C CNN
+F 1 "SW_Push" H 7400 6294 50  0000 C CNN
+F 2 "SDBox:Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin" H 7400 6300 50  0001 C CNN
+F 3 "~" H 7400 6300 50  0001 C CNN
+	1    7400 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 6100 0    50   Input ~ 0
+GND
+Text GLabel 7600 6100 2    50   Input ~ 0
 UART0_RX
 $EndSCHEMATC
