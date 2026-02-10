@@ -35,6 +35,17 @@ https://github.com/jbilander/amiga-par-to-spi-adapter/tree/master/rp2350
 </a>
 
 ***
+BOM Rev. 3C
+---------
+same as 3B but with these changes:
+Reference  | Name/Value   | Package | Notes
+-|-|-|-|
+BT1 | Push button | Sunrom_Tactile_Switch_3x4x2mm_SMD_2-Pin | [Aliexpress](https://www.aliexpress.com/item/4001107238344.html)
+D1-D2 (Optional) | SMD LED | 0603 | [Aliexpress](https://www.aliexpress.com/item/1005003836509392.html)
+R1 (Optional) | 1k Ω | 0805 | (Mandatory if D1 populated) Series resistor for D1 LED, adjust R-value to your type of LED and preferred brightness
+R2 (Optional) | 1k Ω | 0805 | (Mandatory if D2 populated) Series resistor for D2 LED, adjust R-value to your type of LED and preferred brightness
+
+***
 
 BOM Rev. 3B
 ---------
