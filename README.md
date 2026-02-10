@@ -9,10 +9,10 @@ https://github.com/jbilander/amiga-par-to-spi-adapter/tree/master/rp2350
 ***
 
 <a href="images/SDBox-v3_pic5.png">
-<img src="images/SDBox-v3_pic5.png" width="390" height="338">
+<img src="images/SDBox-v3_pic5.png" width="310" height="410">
 </a>
 <a href="images/SDBox-v3_pic6.png">
-<img src="images/SDBox-v3_pic6.png" width="381" height="338">
+<img src="images/SDBox-v3_pic6.png" width="310" height="410">
 </a>
 
 
